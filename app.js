@@ -18,7 +18,7 @@ const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 
-const port = 3000;
+const PORT = 3000;
 mongoose.connect('mongodb://127.0.0.1:27017/yelp-camp', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -87,4 +87,4 @@ app.use((err, req, res, next) => {
 });
 
 // Server
-app.listen(port, () => console.log(`LISTENING ON PORT ${port}`));
+app.listen(port, () => console.log(`LISTENING ON PORT ${PORT}`));
